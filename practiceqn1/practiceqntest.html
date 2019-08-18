@@ -6,14 +6,14 @@
   <title>JS Practiceqn</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="practiceqntest.css">
-  <script src="validation.js"></script>
+  
   <script src="display.js"></script>
 </head>
   <body>
     <!--Main container starts here-->
     <div class="container mt-5">
       <!--Form starts here-->
-        <form name="myForm" action="" onsubmit="return validateForm()" method="" >
+        <form name="myForm" action="" >
         <!--Email section starts here-->
           <div class="form-group required emailsection row">
             <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
@@ -37,36 +37,36 @@
           </div>
         <!--Name section ends here-->
         <!--Gender section starts here-->
-        <div class="form-check row pl-0">
-          <label class="col-sm-2 col-form-label">Gender</label>
-          <div class="genderinput1 col-sm-5 ml-3">
-            <label class="form-check-label text-muted" for="radio1">
-              <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Male
-            </label>
+          <div class="form-check row pl-0">
+            <label class="col-sm-2 col-form-label">Gender</label>
+            <div class="genderinput1 col-sm-5 ml-3">
+              <label class="form-check-label text-muted" for="radio1">
+                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Male
+              </label>
+            </div>
+            <div class="genderinput2 col-sm-5 ml-5">
+              <label class="form-check-label text-muted" for="radio2"> 
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Female
+              </label>
+            </div>
+            </br></br>
           </div>
-          <div class="genderinput2 col-sm-5 ml-5">
-            <label class="form-check-label text-muted" for="radio2"> 
-              <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Female
-            </label>
-          </div>
-          </br></br>
-        </div>
         <!--Gender section ends here-->
         <!--Phone section starts here-->
-        <div class="form-group required phonesection row">
-          <label for="inputphone" class="col-sm-2 col-form-label">Phone number</label>
-          <div class="col-sm-2">
-            <input type="input" class="form-control" id="inputphone1" aria-describedby="phonetext1" required>
-            <label id="phonetext1" class="form-text-inline text-muted">Area Code</label>
+          <div class="form-group required phonesection row">
+            <label for="inputphone" class="col-sm-2 col-form-label">Phone number</label>
+            <div class="col-sm-2">
+              <input type="input" class="form-control" id="inputphone1" aria-describedby="phonetext1" required>
+              <label id="phonetext1" class="form-text-inline text-muted">Area Code</label>
+            </div>
+            <div class="col-sm-1 hyphonflex">
+              <label>-</label>
+            </div>
+            <div class="col-sm-5">
+              <input type="input" class="form-control" id="inputphone2" aria-describedby="phonetext2" required></br>
+              <label id="phonetext2" class="form-text-inline text-muted">Phone Number</label>
+            </div>
           </div>
-          <div class="col-sm-1 hyphonflex">
-            <label>-</label>
-          </div>
-          <div class="col-sm-5">
-            <input type="input" class="form-control" id="inputphone2" aria-describedby="phonetext2" required></br>
-            <label id="phonetext2" class="form-text-inline text-muted">Phone Number</label>
-          </div>
-        </div>
         <!--Phone section ends here-->
         <!--Address section starts here-->
           <div class="form-group sectionaddress row">
@@ -105,7 +105,7 @@
           </div>
           <div class="form-group row">
             <div class="col-sm-1 offset-sm-9">
-              <button type="submit" class="btn btn-secondary" onclick="displayDetails()">Submit</button>
+              <button type="submit" class="btn btn-secondary" onclick="displayDetails(); return false">Submit</button>
             </div>
           </div>
         <!--Submit section ends here-->
@@ -117,7 +117,10 @@
     <div class="displaysection container" id="showdetails">
       </br></br>  
       <hr>
-      <!--display details modal ends here-->
+      <div class="">
+        <label class="emaillabel">Email address:&nbsp;&nbsp;</label>
+        <p id="detailsemail">Details will display here</p>
+      </div>
       <div class="">
         <label class="emaillabel">Email address:&nbsp;&nbsp;</label>
         <p id="detailsemail">Details will display here</p>
@@ -156,5 +159,6 @@
       </div>
     </div>
     <!--display section ends here-->
+    
   </body>
 </html>                            

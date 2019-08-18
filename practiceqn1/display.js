@@ -1,9 +1,9 @@
 function displayDetails(){
-  document.getElementById("showdetails").style.display = "block";
+ 
 
   document.getElementById('detailsemail').innerHTML = document.getElementById("inputemail").value;
 
-  document.getElementById('detailsname').innerHTML = document.getElementById("inputname1").value + innerHTML = document.getElementById("inputname2").value;
+  document.getElementById('detailsname').innerHTML = document.getElementById("inputname1").value + document.getElementById("inputname2").value;
 
   document.getElementById('detailsradio').innerHTML = document.getElementById("radio1").value;
 
@@ -19,4 +19,5 @@ function displayDetails(){
 
   document.getElementById('detailscode').innerHTML = document.getElementById("inputcode").value;
   
+  document.getElementById("showdetails").style.display = "block";
 }
