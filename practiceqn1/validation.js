@@ -9,6 +9,9 @@ function validateForm()
   }
   else{
     alert("first name not matched");
+    /*document.getElementsByClassName("form-control").haserror.style.border = "1px solid red";*/
+    /*console.log(document.getElementsByClassName("fnamecontrol").style.border);*/
+    return false;
   }
 
   //validating last name
@@ -65,4 +68,5 @@ function validateForm()
   else{
     alert(" zipcode not matched");
   }
+
 }

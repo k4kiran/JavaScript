@@ -11,6 +11,7 @@ function getGenderDetails()
 }
 
 function displayDetails(){
+   document.getElementById("formsection").style.display = "none";
   document.getElementById('detailsemail').innerHTML = document.getElementById("inputemail").value;
   document.getElementById('detailsname').innerHTML = document.getElementById("inputname1").value + " " + document.getElementById("inputname2").value;
   var gendervalue = getGenderDetails();

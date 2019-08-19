@@ -8,6 +8,16 @@ global declarations
   margin-left:5px;
 }
 
+.displaysection h1{
+  text-align:center;
+} 
+/* ===============================================================
+namesection declarations
+==================================================================*/
+.haserror{
+  border:1px solid red;
+}
+
 /*
 Gender section stylings
 ==================================================================*/
@@ -47,4 +57,17 @@ display section stylings
 
 #showdetails{
   display:none;
+}
+
+.displaysection label{
+  font-size: 30px;
+  margin-right:40px;
+} 
+
+.displaysection p{
+  font-size:20px;
+}
+
+.displaysection .row{
+  justify-items: center;
 }

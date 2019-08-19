@@ -8,12 +8,13 @@
   <link rel="stylesheet" type="text/css" href="practiceqntest.css">
   
   <script src="display.js"></script>
+  <script src="validation.js"></script>
 </head>
   <body>
     <!--Main container starts here-->
-    <div class="container mt-5">
+    <div class="container mt-5" id=formsection>
       <!--Form starts here-->
-        <form name="myForm" action="" >
+        <form name="myForm" action="" onsubmit="displayDetails(); return false">
         <!--Email section starts here-->
           <div class="form-group required emailsection row">
             <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
@@ -27,11 +28,11 @@
           <div class="form-group required namesection row">
             <label for="inputname" class="col-sm-2 col-form-label">Name</label>
             <div class="col-sm-5">
-              <input type="input" class="form-control" id="inputname1" aria-describedby="firstname" required>
+              <input type="input" class="form-control fnamecontrol" id="inputname1" aria-describedby="firstname" required>
               <label  class="text-muted" id="firstname">Firstname</label>
             </div>
             <div class="col-sm-5">
-              <input type="input" class="form-control" id="inputname2" aria-describedby="lastname" required>
+              <input type="input" class="form-control lnamecontrol" id="inputname2" aria-describedby="lastname" required>
               <label  class="text-muted" id="lastname">Lastname</label>
             </div>
           </div>
@@ -41,7 +42,7 @@
             <label class="col-sm-2 col-form-label">Gender</label>
             <div class="genderinput1 col-sm-5 ml-3">
               <label class="form-check-label text-muted" for="radio1">
-                <input type="radio" class="form-check-input" id="radio1" name="optgender" value="Male">Male
+                <input type="radio" class="form-check-input" id="radio1" name="optgender" value="Male" required>Male
               </label>
             </div>
             <div class="genderinput1 col-sm-5 ml-5">
@@ -105,7 +106,7 @@
           </div>
           <div class="form-group row">
             <div class="col-sm-1 offset-sm-9">
-              <button type="submit" class="btn btn-secondary" onclick="displayDetails(); return false">Submit</button>
+              <button type="submit" class="btn btn-secondary" onclick="validateForm()">Submit</button>
             </div>
           </div>
         <!--Submit section ends here-->
@@ -116,44 +117,96 @@
     <!--display section starts here-->
     <div class="displaysection container" id="showdetails">
       </br></br>  
+      <h1>Summary</h1>
       <hr>
-      <div class="d-flex">
-        <label class="emaillabel">Email address:&nbsp;&nbsp;</label>
+      </br></br>
+      <div class="row">
+        <div class="col-sm-4">
+        <label class="emaillabel">Email address&nbsp;&nbsp;</label>
+        </div>
+        <div class="col-sm-1">
+        <p>:</p>
+        </div>
+        <div class="col-sm-3">
         <p id="detailsemail">Details will display here</p>
+        </div>
       </div>
-      <div class="d-flex">
-        <label class="namelabel">Full Name:&nbsp;&nbsp;</label>
+      <div class="row">
+        <div class="col-sm-4">
+        <label class="namelabel">Full Name&nbsp;&nbsp;</label>
+        </div>
+        <div class="col-sm-1">
+        <p>:</p>
+        </div>
+        <div class="col-sm-3">
         <p id="detailsname">Details will display here</p>
+        </div>
       </div>
-      <div class="d-flex">
+      <div class="row">
+        <div class=col-sm-4>
         <label class="genderlabel">Gender:&nbsp;&nbsp;</label>
+        </div>
+        <div class="col-sm-1">
+        <p>:</p>
+        </div>
+        <div class="col-sm-3">
         <p id="detailsradio">Details will display here</p>
+        </div>
       </div>
-      <!--
-      <div class="d-flex">
-        <label class="phone1label">areacode:&nbsp;&nbsp;</label>
-        <p id="detailsphone1">Details will display here</p>
-      </div>
-      -->
-      <div class="d-flex">
+      <div class="row">
+        <div class=col-sm-4>
         <label class="phone2label">Phone number:&nbsp;&nbsp;</label>
+        </div>
+        <div class="col-sm-1">
+        <p>:</p>
+        </div>
+        <div class=col-sm-3>
         <p id="detailsphone2">Details will display here</p>
+        </div>
       </div>
-      <div class="d-flex">
+      <div class="row">
+        <div class="col-sm-4">
         <label class="streetlabel">Street:&nbsp;&nbsp;</label>
+        </div>
+        <div class="col-sm-1">
+        <p>:</p>
+        </div>
+        <div class="col-sm-3">
         <p id="detailsstreet">Details will display here</p>
+        </div>
       </div>
-      <div class="d-flex">
+      <div class="row">
+        <div class="col-sm-4">
         <label class="citylabel">City:&nbsp;&nbsp;</label>
+        </div>
+        <div class="col-sm-1">
+        <p>:</p>
+        </div>
+        <div class="col-sm-3">
         <p id="detailscity">Details will display here</p>
+        </div>
       </div>
-      <div class="d-flex">
+      <div class="row">
+        <div class=col-sm-4>
         <label class="statelabel">State:&nbsp;&nbsp;</label>
+        </div>
+        <div class="col-sm-1">
+        <p>:</p>
+        </div>
+        <div class="col-sm-3">
         <p id="detailsstate">Details will display here</p>
+        </div>
       </div>
-      <div class="d-flex">
+      <div class="row">
+        <div class="col-sm-4">
         <label class="codelabel">zipcode:&nbsp;&nbsp;</label>
+        </div>
+        <div class="col-sm-1">
+        <p>:</p>
+        </div>
+        <div class="col-sm-3">
         <p id="detailscode">Details will display here</p> 
+        </div>
       </div>
     </div>
     <!--display section ends here-->
