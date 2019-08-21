@@ -1,9 +1,22 @@
-
-p{
-  font-size:300px;
-  color:rgb(255, 0, 0);
-}
-.layout
+#layout
 {
   text-align: center;
+}
+.timesection p
+{
+  font-size:10em;
+  color:rgb(238, 8, 8);
+}
+p
+{
+  margin:0;
+  font-size:3em;
+}
+#ampm{
+  font-size: 2em;
+  padding-top: 150px;
+}
+#datehere
+{
+  color:rgb(223, 106, 10);
 }
