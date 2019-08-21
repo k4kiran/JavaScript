@@ -34,6 +34,8 @@ function validateFName()
   document.getElementById("nameerror").style.display = "none";
   return "";
 }
+
+
 //validating last name
 function validateLName()
 {

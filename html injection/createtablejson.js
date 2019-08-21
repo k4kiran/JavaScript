@@ -4,26 +4,26 @@ function CreateTableFromJSON() {
                 "Book ID": "1",
                 "Book Name": "Computer Architecture",
                 "Category": "Computers",
-                "Price": "125.60"
+                "Price": "300"
             },
             {
                 "Book ID": "2",
-                "Book Name": "Asp.Net 4 Blue Book",
+                "Book Name": "let us cpp",
                 "Category": "Programming",
-                "Price": "56.00"
+                "Price": "560"
             },
             {
                 "Book ID": "3",
-                "Book Name": "Popular Science",
-                "Category": "Science",
-                "Price": "210.40"
+                "Book Name": "Web designing",
+                "Category": "Design",
+                "Price": "210"
             }
         ]
 
         // ('Book ID', 'Book Name', 'Category' and 'Price')
         var col = [];
-        for (var i = 0; i < myBooks.length; i++) {
-            for (var key in myBooks[i]) {
+        for (var index = 0; index < myBooks.length; index++) {
+            for (var key in myBooks[index]) {
                 if (col.indexOf(key) === -1) {
                     col.push(key);
                 }
