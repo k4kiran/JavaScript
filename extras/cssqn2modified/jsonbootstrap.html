@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> My WEBPAGE </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jsonbootstrap.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="jsonbootstrap.js"></script>
+  </head>
+  <!--declarations end here-->
+
+  <body>
+    <div class="container">
+      <!--header section starts here-->
+      <header class="row">
+        <!--navigation-->
+        <div class="col-sm-12">
+          <nav class="navbar navbar-expand-md navbar-light bg-white">
+            <a class="navbar-brand" href="#"><label class="brand"><strong>Jobapply</strong></label> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsemenu" aria-controls="collapsemenu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsemenu">
+              <ul id="newid" class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-body" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-body" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-body" href="#">Candidates</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-body" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary">Post a Job</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-danger">Want a Job</button>
+                </li>
+              </ul>
+            </div>
+            </a> 
+            
+          </nav>
+          <!--End navigation-->
+        </div>
+
+      </header>
+      <!--header section ends here-->
+        
+
+      <!--mainarea section starts here-->
+      <section class="mainarea row">
+        <h5>We have 20000 more job offers you deserve</h5>
+        <h1><strong>Largest Job Site In The World</strong></h1>
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link mylink active " href="#profile" role="tab" data-toggle="tab">Find a Job</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mylink" href="#buzz" role="tab" data-toggle="tab">Find a Candidate</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade show active" id="profile">
+              </br>
+              <div class="buttonsection d-flex flex-wrap">
+                <div class="form-group input1">
+                  <input type="text" class="form-control" placeholder="Eg: Adam Sc" name="text1">
+                </div>
+                <div class="form-group input2">
+                  <input type="text" class="form-control" placeholder="Category" name="text2">
+                </div>
+                <div class="form-group input3">
+                  <input type="text" class="form-control" placeholder="Location" name="text2">
+                </div>
+                <button type="submit" class="btn btn-danger mybutton">Search</button>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="buzz">
+              </br>
+              <div class="buttonsection d-flex flex-wrap">
+                <div class="form-group input1">
+                  <input type="text" class="form-control myform" placeholder="Eg: Adam Sc" name="text4">
+                </div>
+                <div class="form-group input2">
+                  <input type="text" class="form-control" placeholder="Category" name="text5">
+                </div>
+                <div class="form-group input3">
+                  <input type="text" class="form-control" placeholder="Location" name="text6">
+                </div>
+                <button type="submit" class="btn btn-danger mybutton">Search</button>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!--mainarea section ends here-->
+    </div>  
+    <!--second section starts here-->
+
+    <div class="section2">
+      <section class="container pt-5">
+        <section class="row secondsection">       
+          <div class="col-sm-3">
+            <div id="searchjob"></div></br></br>
+            <div id="content1">
+              <h6>Search Millions of Jobs</h6></br>
+              <p>A small river named duden flows by their place and supplies</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div id="managejob"></div><br><br>
+            <div id="content2">
+              <h6>Easy To Manage Jobs</h6></br>
+              <p>A small river named duden flows by their place and supplies</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div id="topcareer"></div><br><br>
+            <div id="content3">
+              <h6>Top Careers</h6></br>
+              <p>A small river named duden flows by their place and supplies</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div id="expertcandidate"></div><br><br>
+            <div id="content4">
+              <h6>Search Expert Candidates</h6></br>
+              <p>A small river named duden flows by their place and supplies</p>
+            </div>
+          </div>         
+        </section>
+      </section>
+    </div>
+    <!--second section ends here-->
+      
+    <!--category section starts here-->
+    <div class="container sectioncategory">
+        <section class="categoryheading pt-4">
+          <h5 class= "text-secondary"> <small>Job Categories</small></h5>
+          <h3 class="mx-auto">Top Categories</h3>
+          <!--testing json injection-->
+          <button type="button" class="btn btn-primary mt-5 mb-3" onclick="createCategory()">Primary</button>
+          <div class="row categorylist1" id="testjson">
+              <div class="col-sm-3 col1"></div>
+              <div class="col-sm-3 col1"></div>
+              <div class="col-sm-3 col1"></div>
+              <div class="col-sm-3 col1"></div>
+          </div>
+          <!--testing ends here-->
+        </section></br></br>
+        <section class="row categorylist">         
+          <div class="col-sm-3">
+            <div class="list-group list-group-flush">
+              <div class="list-group-item text-dark">Web Development</br>
+                <label class="opennumber text-danger">340</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Graphic Designer</br>
+                <label class="opennumber text-danger">143</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Multimedia</br>
+                <label class="opennumber text-danger">100</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Advertising</br>
+                <label class="opennumber text-danger">90</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="list-group list-group-flush">
+              <div class="list-group-item text-dark">Education & training</br>
+                <label class="opennumber text-danger">100</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">English</br>
+                <label class="opennumber text-danger">200</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Social media</br>
+                <label class="opennumber text-danger text-danger">300</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Writing</br>
+                <label class="opennumber text-danger">150</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+            </div>             
+          </div>
+          <div class="col-sm-3">
+            <div class="list-group list-group-flush">
+              <div class="list-group-item text-dark">PHP programming</br>
+                <label class="opennumber text-danger">400</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Project management</br>
+                <label class="opennumber text-danger">100</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Finance management</br>
+                <label class="opennumber text-danger">222</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Office and admin</br>
+                <label class="opennumber text-danger">123</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+            </div>
+          </div>              
+          <div class="col-sm-3">
+            <div class="list-group list-group-flush">
+              <div class="list-group-item text-dark">web designer</br>
+                <label class="opennumber text-danger">324</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Customer service</br>
+                <label class="opennumber text-danger">564</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Marketing & sales</br>
+                <label class="opennumber text-danger">234</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Software development</br>
+                <label class="opennumber text-danger">425</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+            </div>            
+          </div>          
+        </section>
+      
+        <!--category section ends here-->
+    </div>  
+      <!--browsejob section starts here-->
+      <div class="browsejob card card-default">
+        <div class="jobbrowse card-body container">
+          <h6>SEARCH JOB</h6>
+          <h1>Browse Job By Specialism</h1>
+          <p>Far far away,behind the word mountains, far from the countries vokalia and consonantia, there live the blind texts.Seperated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+        </div>
+      </div>
+      <!--browsejob section ends here-->
+      
+      <!--contact section starts here-->
+      <section class=topcontainer>
+        <div class="container">
+          <section class="row contact">        
+            <div class="col-sm-3">
+              <h5>About</h5>
+              <p>Far far away,behind the word mountains,far from the countries vokalia and consonantia, there live the blind texts.</p>
+              <div class="socialmedia"></div></br>
+            </div>
+            <div class="col-sm-3">
+              <h5>Employers</h5>
+              <ul class="list-unstyled">
+                <li>How it works</li>
+                <li>Register</li>
+                <li>Post a Job</li>
+                <li>Advanced Skill Search</li>
+                <li>Recruiting Service</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h5>Workers</h5>
+              <ul class="list-unstyled">
+                <li>How it works</li>
+                <li>Register</li>
+                <li>Post Your Skills</li>
+                <li>Job Search</li>
+                <li>Employer Search</li>
+              </ul>
+            </div>
+            <div class="lastcolumn col-sm-3">
+              <h5>Have a Question?</h5>
+              <p><span id="location"></span>&nbsp;&nbsp; 203 Fake St. Mountain</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View,San francisco,California</p>
+
+              <p><span id="phone"></span>&nbsp;&nbsp;+2 392 3929 210</p>
+
+              <p><span id="mail"></span>&nbsp;&nbsp;&nbsp;info@yourdomain.com</p>
+            </div>       
+          </section>
+        </div>
+      </section>
+      <!--contact section ends here-->
+
+      <!--footer section starts here-->
+      <footer class="row">
+        <p class="mx-auto text-secondary"><small>Copyright 2019 All rights reserved</small></p>
+      </footer>
+      <!--footer section ends here-->
+    </div>
+    </div>
+  </body>
+</html>  
