@@ -1,6 +1,8 @@
 #layout
 {
   text-align: center;
+  background-color:ffffff;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
 }
 .timesection p
 {
@@ -19,4 +21,5 @@ p
 #datehere
 {
   color:rgb(223, 106, 10);
+  margin-top:100px;
 }

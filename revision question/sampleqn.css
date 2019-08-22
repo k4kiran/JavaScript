@@ -1,0 +1,60 @@
+
+/* ====== HEADER ====== */
+.navbar.mainnav{
+  opacity:.7;
+}
+.navbar-nav.mynav{
+  padding-left:20%;
+}
+
+/* ====== Banner ====== */
+.bannernav
+{
+  height:600px;
+  background-image:url("images/blackpanther.jpg");
+  background-repeat: no-repeat;
+    background-position: 52% 0%;
+    background-size: 100% 100%;
+  
+}
+
+.card.mycard1
+{
+  margin:10% 53% auto auto;
+  font-size:30px;
+}
+.card.mycard2
+{
+  margin: 0% 73% auto auto;
+  font-size:20px;
+}
+
+/* ============ section1 ==============*/
+section{
+  text-align: center;
+}
+.spriteicon
+{
+  width:100px;
+  height:100px;
+  margin:auto;
+  background-image:url("images/iconset-sprite.jpg");
+  background-repeat:no-repeat;
+  background-size:380px;
+}
+
+#sprite1{
+  background-position:22px 15px;
+
+}
+#sprite2{
+  background-position:-78px 11px;
+}
+
+#sprite3{
+  background-position:-176px 4px;
+}
+
+#sprite4{
+  background-position:-291px 6px;
+}
