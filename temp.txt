@@ -1,0 +1,82 @@
+<section class="categorylist">         
+          <div class="cat1">
+            <div class="list-group list-group-flush mygroup">
+              <div class="list-group-item text-dark">Web Development</br>
+                <label class="opennumber text-danger">340</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Graphic Designer</br>
+                <label class="opennumber text-danger">143</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Multimedia</br>
+                <label class="opennumber text-danger">100</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Advertising</br>
+                <label class="opennumber text-danger">90</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+            </div>
+          </div>
+          <div class="cat2">
+            <div class="list-group list-group-flush">
+              <div class="list-group-item text-dark">Education & training</br>
+                <label class="opennumber text-danger">100</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">English</br>
+                <label class="opennumber text-danger">200</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Social media</br>
+                <label class="opennumber text-danger text-danger">300</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Writing</br>
+                <label class="opennumber text-danger">150</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+            </div>             
+          </div>
+          <div class="cat3">
+            <div class="list-group list-group-flush">
+              <div class="list-group-item text-dark">PHP programming</br>
+                <label class="opennumber text-danger">400</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Project management</br>
+                <label class="opennumber text-danger">100</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Finance management</br>
+                <label class="opennumber text-danger">222</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Office and admin</br>
+                <label class="opennumber text-danger">123</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+            </div>
+          </div>              
+          <div class="cat4">
+            <div class="list-group-inline list-group-flush">
+              <div class="list-group-item text-dark">web designer</br>
+                <label class="opennumber text-danger">324</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item-inline text-dark">Customer service</br>
+                <label class="opennumber text-danger">564</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Marketing & sales</br>
+                <label class="opennumber text-danger">234</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+              <div class="list-group-item text-dark">Software development</br>
+                <label class="opennumber text-danger">425</label>&nbsp;
+                <label class="poststatus text-secondary">Open Position</label>
+              </div>
+            </div>            
+          </div>          
+        </section>

@@ -1,10 +1,22 @@
 /* ===============================================================
 global declarations
 ===============================================================*/
-
+*{
+  box-sizing:border-box;
+}
+body{
+  overflow-x:hidden;
+}
 section,header,footer{
   padding:5px 0px 5px 0px;
 }
+
+.makebold:hover{
+font-weight: bold;
+color:white;
+text-decoration:none;
+}
+
 
 /*padding in case of container fluid
 section,header,footer{
@@ -139,6 +151,28 @@ category section styling
 .categoryheading h5{
   text-align: center;
 }
+
+ul.testlist{
+  list-style:none;
+  padding-left:0;
+  
+}
+.testlist li{
+  display: inline-block;
+  width:24.7%;
+  line-height:5px;
+}
+hr{
+  margin:0;
+  width:80%;
+}
+.category{
+padding:12px 20px;
+}
+.categoryhead{
+  margin-bottom:20px;
+  width:100%;
+}
 /* ===============================================================
 Browsejob section styling
 ===============================================================*/
@@ -224,9 +258,4 @@ footer{
   background-color: black;
   color:white;
   text-align: center;;
-}
-
-.row.categorylist
-{
-  display:none;
 }

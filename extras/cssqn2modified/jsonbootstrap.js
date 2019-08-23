@@ -19,6 +19,11 @@ function createCategory() {
         "categoryTitle": "Multimedia",
         "Count": "500",
         "description": "Open Position",
+      },
+      {
+        "categoryTitle": "Multimedia",
+        "Count": "500",
+        "description": "Open Position",
       }
   ]
 
@@ -27,10 +32,10 @@ function createCategory() {
     var catListItemTitle = " ";
     for(var catItem = 0; catItem < myCategory.length; catItem++){
         
-        catListItemTitle = catListItemTitle + '<div class="list-group list-group-flush"><div class="list-group-item text-dark">'+ myCategory[catItem].categoryTitle +'</br>';
+        catListItemTitle = catListItemTitle + '<li><div="class="category" text-dark"><label class="categoryhead">'+ myCategory[catItem].categoryTitle + '</label>';
         catListItemTitle = catListItemTitle + '<label class="opennumber text-danger">' + myCategory[catItem].Count +'</label>&nbsp;';
-        catListItemTitle = catListItemTitle + '<label class="poststatus text-secondary">' + myCategory[catItem].description + '</label></div></div>';         
-        $(".col1").html(catListItemTitle);
+        catListItemTitle = catListItemTitle + '<label class="poststatus text-secondary">' + myCategory[catItem].description + '</label><hr></div></li>';         
+        $(".testlist").html(catListItemTitle);
     }
 
 });
