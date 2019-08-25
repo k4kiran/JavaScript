@@ -156,6 +156,25 @@
           <button type="button" class="btn btn-primary mt-5 mb-3" onclick="createCategory()">Primary</button>
           <!--testing ends here-->
         </section></br></br>
+        <section class="dropdownselect row">
+          <select class="col-sm-3 custom-select" id="dropdown1">
+            <option selected>Web Designer</option>
+            <option value="Php Developer">Php Developer</option>
+            <option value="Database Designer">Database Designer</option>
+            <option value="Multimedia">Multimedia</option>
+          </select>
+          <select class="col-sm-3 custom-select" id="dropdown2">
+            <option selected>300</option>
+            <option value="200">200</option>
+            <option value="100">100</option>
+            <option value="500">500</option>
+          </select>
+          <select class="col-sm-3 custom-select" id="dropdown3">
+            <option selected>Open Position</option>
+            <option value="Closed Position">Closed Position</option>
+          </select>
+          <button id="filterbutton" onclick = "getInput()">filter</button>
+        </section>
         <section class="categorylist">         
           <ul class="testlist">
             <li>
@@ -196,7 +215,7 @@
             
           </ul>
             
-          </div>          
+          </div>         
         </section>
       
         <!--category section ends here-->
