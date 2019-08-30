@@ -1,0 +1,106 @@
+/* ====== GENERIC ====== */
+
+body{
+    margin: 0;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    padding: 60px 0;
+}
+
+/* ====== BUTTONS ====== */
+
+.btn{    
+    border: 0;
+}
+.btn.btn-primary{
+    background: #6d63ff;
+}
+.btn.btn-secondary{
+    background: #ff6448;
+}
+
+/* ====== HEADER ====== */
+
+header{
+    padding: 1em 0;
+}
+.navbar-light{
+    background: transparent;
+}
+.navbar-brand{
+    font-size: 1.6em;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+/* ====== NAVIGATION ====== */
+
+.navbar .nav-item .nav-link{
+    font-weight: 500;
+    padding: 0.6em 1.3em;
+}
+.navbar .nav-item .nav-link.btn{
+    padding: 0.6em 1.5em;
+    color: #fff;
+    margin: 0 0.2em;
+}
+.navbar .nav-item.active .nav-link{
+    color: #6d63ff;
+    font-weight: 700;
+}
+
+
+/*---------------------SEARCH BOX-----------------*/
+.topbox.row{
+   margin-top:200px;
+}
+.topbox{
+  width:100%;
+  background-color:#000000;
+  padding:2em;
+}
+.topbox h3{
+  color:#ffffff;
+  font-size:30px;
+  font-weight:600;
+}
+.topbox button{
+  width:8.5em;
+  height:3em;
+  border-radius:20px;
+  border:2px solid rgb(26, 252, 26);
+  background-color:#000000;
+  color:rgb(26, 252, 26);
+  opacity:.8;
+}
+.col-sm-2.button1{
+  text-align:right;
+}
+
+select{
+  width:200px;
+  margin:2em;
+  height:2em;;
+  border-radius:20px;
+}
+.searchbutton{
+  border-radius:20px;
+  background-color:rgb(26, 252, 26);;
+  width:200px;
+  height:2em;
+  margin:2em;
+}
+.search{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+div .col-sm-4.col1{
+  padding:0;
+}
